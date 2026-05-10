@@ -2,6 +2,11 @@ import streamlit as st
 import tensorflow as tf
 import numpy as np
 import cv2
+st.set_page_config(
+    page_title="DR Detection AI",
+    page_icon="dr_logo.png",
+    layout="centered"
+)
 
 model = tf.keras.models.load_model("dr_binary_model.h5")
 
